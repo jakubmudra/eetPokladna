@@ -1,0 +1,24 @@
+<div class="container pt-5">
+    <div class="row">
+        <div class="col-12">
+            <h1>Stock List</h1>
+            <p class="text-right">Showing {{ stocks|length }} stocks</p>
+            <a href="/product/edit">Add new</a>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Active</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in stocks %}
+                        {{ include('stock/stockList-single.twig') }}
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

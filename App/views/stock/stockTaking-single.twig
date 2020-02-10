@@ -1,0 +1,14 @@
+<tr>
+    <th scope="row">{{ item.id }}</th>
+    <td>{{ item.name }}</td>
+    <td>{{ item.price|number_format(2, '.', ',')  }} CZK</td>
+    {% if edit %}
+        <td><input type="number" class="form-control w-25" step="1" min="0" name="{{ item.id }}" value="{{ item.quantity }}"></td>
+        <td class="text-right"> </td>
+    {% else %}
+        <td>{{ item.quantity }}</td>
+        <td class="text-right">
+            <a href="/product/edit/{{ item.id }}">edit</a>
+        </td>
+    {% endif %}
+</tr>

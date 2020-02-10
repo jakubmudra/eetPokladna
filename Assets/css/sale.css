@@ -1,0 +1,112 @@
+body {
+    background-image: url("../img/bg.png");
+    background-repeat: repeat;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.sale-receipt{
+    background-color: rgba(52, 58, 64, 0.15);
+    min-height: 300px;
+    margin: 5px 0;
+}
+
+.sale-receipt--receiptId p{
+    font-size: 15px;
+    font-weight: 300;
+    color: #5D5D5D;
+    margin: 0;
+}
+
+.sale-receipt--items td:last-child, th:last-child{
+    text-align: right;
+}
+
+.sale-receipt--items table{
+    font-size: 15px;
+    font-weight: 300;
+    color: #5D5D5D;
+}
+
+.sale-receipt--suma {
+    background-color: rgba(52, 58, 64, 0.45);
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.sale-receipt--suma p {
+    margin: 0;
+}
+
+.sale-item {
+    padding: 5px;
+}
+
+.sale-item--inner {
+    padding: 5px;
+    background-color: #1c7430;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.blue {
+    background-color: #007BFF;
+}
+
+.dark-blue {
+    background-color: #0056B3;
+}
+
+.green {
+    background-color: #29A745;
+}
+
+.dark-red {
+    background-color: #721C24;
+}
+
+.red {
+    background-color: #DD3444;
+}
+
+.grey {
+    background-color: #6C757D;
+}
+
+.dark-grey {
+    background-color: #343A3E;
+}
+
+.orange {
+    background-color: #FFC103;
+}
+
+.sale-item--inner p {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+
+.sale-item--inner.active {
+    visibility: visible;
+}
+
+.sale-main.container {
+    width: 200px;
+}
+
